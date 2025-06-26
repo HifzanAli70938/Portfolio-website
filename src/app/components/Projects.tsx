@@ -77,20 +77,24 @@ export default function Projects() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
               >
-                <motion.div
-                  className="flex items-center gap-2 text-gray-400 "
-                  whileHover={{ x: 0 }}
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-gray-400 hover:text-primary transition-colors cursor-pointer"
                 >
                   <FaGithub className="h-5 w-5" />
                   <span>Code</span>
-                </motion.div>
-                <motion.div
-                  className="flex items-center gap-2 text-gray-400 "
-                  whileHover={{ x: 0 }}
+                </a>
+                <a
+                  href={project.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-gray-400 hover:text-primary transition-colors cursor-pointer"
                 >
                   <FaExternalLinkAlt className="h-5 w-5" />
                   <span>Live Demo</span>
-                </motion.div>
+                </a>
               </motion.div>
             </motion.article>
           ))}

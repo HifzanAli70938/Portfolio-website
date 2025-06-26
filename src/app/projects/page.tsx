@@ -123,4 +123,4 @@ export default function Projects() {
       </motion.div>
     </div>
   )
-} 
+}
