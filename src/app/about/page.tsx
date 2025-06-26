@@ -74,8 +74,11 @@ export default function About() {
             <FaLaptopCode className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Backend</h3>
             <ul className="text-secondary space-y-2">
+              <li>PHP</li>
+              <li>Laravel</li>
               <li>Node.js</li>
               <li>Express</li>
+                 <li>MySql</li>
               <li>PostgreSQL</li>
               <li>MongoDB</li>
             </ul>
